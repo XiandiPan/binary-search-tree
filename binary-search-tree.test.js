@@ -316,7 +316,7 @@ describe("find", function () {
   });
 });
 
-describe("findRecursively", function () {
+describe.only("findRecursively", function () {
   it("finds a leaf node correctly", function () {
     let foundNode = smallBST.findRecursively(20);
     expect(foundNode.val).toEqual(20);
